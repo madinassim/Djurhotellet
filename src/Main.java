@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Antal katter: " + hotell.antallKatt());
         hotell.upprop();
 
-        Katt hittad = hotell.sokKatt("Misse");
+        Katt hittad = hotell.hittaNamn("Misse");
         if (hittad != null) {
             System.out.println("Hittad katt: " + hittad.getNamn());
             System.out.println("Ras: " + hittad.getRas());
@@ -55,7 +55,7 @@ public class Main {
 
                 System.out.print("Ange kattens namn: ");
                 String namn = scanner.nextLine();
-                Katt hittadKatt = hotell.sokKatt(namn);
+                Katt hittadKatt = hotell.hittaNamn(namn);
 
                 if (hittadKatt != null) {
                     System.out.println("Namn: " + hittadKatt.getNamn());
