@@ -20,7 +20,22 @@ public class KattHotell {
         }
         return false;
     }
-public int antallKatt() {
-    return katter.size();
+
+    public int antallKatt() {
+        return katter.size();
+    }
+
+    public void upprop() {
+
+        if (katter.isEmpty()) {
+            System.out.println("Hotellet ät tomt! ");
+            return;
+        }
+        for (Katt katt : katter) {
+            System.out.println("Namn: " + katt.getNamn()
+                    + ", Ras: " + katt.getRas()
+                    + ", Chipnummer: " + katt.getChipnummer());
+        }
+    }
 }
-}
+
