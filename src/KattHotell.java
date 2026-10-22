@@ -37,5 +37,14 @@ public class KattHotell {
                     + ", Chipnummer: " + katt.getChipnummer());
         }
     }
+
+    public Katt sokKatt(String namn) {
+        for (Katt katt : katter) {
+            if (katt.getNamn().equalsIgnoreCase(namn)) {
+             return katt;
+            }
+        }
+        return null;
+    }
 }
 
